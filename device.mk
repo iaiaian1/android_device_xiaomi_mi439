@@ -14,6 +14,10 @@ PRODUCT_PACKAGES += \
     xiaomi_olive_overlay_Snap \
     xiaomi_olive_overlay_SystemUI
 
+# POSP
+PRODUCT_BOARD_PLATFORM := msm8937
+PRODUCT_USES_QCOM_HARDWARE := true
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1440
 TARGET_SCREEN_WIDTH := 720
