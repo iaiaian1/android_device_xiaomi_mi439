@@ -9,8 +9,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Arcana stuff.
+$(call inherit-product, vendor/aosp/common.mk)
 
 # Inherit from mi439 device
 $(call inherit-product, device/xiaomi/mi439/device.mk)
@@ -23,18 +23,28 @@ PRODUCT_PACKAGES += \
 # Bootanimation res
 TARGET_BOOT_ANIMATION_RES := 720
 
+#ARCANA STUFFS
+ARCANA_OFFICIAL := true
+ARCANA_DEVICE := mi439
+ARCANA_MAINTAINER := iaiaian1
+WITH_GAPPS := false
+TARGET_SUPPORTS_BLUR := true
+TARGET_BUILD_GRAPHENEOS_CAMERA := true
+COPY_APN_SYSTEM := true
+
+
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mi439
-PRODUCT_NAME := lineage_mi439
+PRODUCT_NAME := aosp_mi439
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := SDM439
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
-
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+DEVICE_MAINTAINER := iaiaian1
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="olive-user 10 QKQ1.191014.001 V12.5.1.0.QCNMIXM release-keys"
