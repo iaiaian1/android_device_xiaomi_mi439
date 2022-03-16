@@ -9,6 +9,9 @@ include device/xiaomi/sdm439-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/mi439
 
+# Bypass depreciated BUILD_COPY_HEADER warning/error
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := pine,olive,olivelite,olivewood,olives,mi439
 
