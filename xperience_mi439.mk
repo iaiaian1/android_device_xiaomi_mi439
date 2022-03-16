@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/xperience/config/common.mk)
 
 # Inherit from mi439 device
 $(call inherit-product, device/xiaomi/mi439/device.mk)
@@ -27,7 +27,7 @@ PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mi439
-PRODUCT_NAME := lineage_mi439
+PRODUCT_NAME := xperience_mi439
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := SDM439
