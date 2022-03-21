@@ -33,6 +33,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/blank.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/blank.xml \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# Network
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor
 
 # Audio
 PRODUCT_COPY_FILES += \
