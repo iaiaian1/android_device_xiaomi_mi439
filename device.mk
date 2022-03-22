@@ -40,7 +40,8 @@ PRODUCT_PACKAGES += \
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0.vendor \
-    android.hardware.gnss@1.1.vendor
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@2.0.vendor
 
 # Audio
 PRODUCT_COPY_FILES += \
