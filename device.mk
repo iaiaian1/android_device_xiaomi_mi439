@@ -43,9 +43,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1.vendor \
     android.hardware.gnss@2.0.vendor
 
-# Power
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2.vendor
+# device/qcom/common modules
+TARGET_COMMON_QTI_COMPONENTS := \
+    bt \
+    perf
 
 # libvr_sam_wrapper
 PRODUCT_PACKAGES += \
