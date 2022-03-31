@@ -51,7 +51,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
 
 # Display
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.display.config-V5-ndk_platform \
     libdisplayconfig \
     libdisplayconfig.qti \
     libdisplayconfig.qti.so \
@@ -63,6 +62,18 @@ PRODUCT_PACKAGES += \
     gralloc.msm8937 \
     hwcomposer.msm8937 \
     memtrack.msm8937 \
+    vendor.qti.hardware.display.config-V1-ndk_platform \
+    vendor.qti.hardware.display.config-V2-ndk_platform \
+    vendor.qti.hardware.display.config-V3-ndk_platform \
+    vendor.qti.hardware.display.config-V4-ndk_platform \
+    vendor.qti.hardware.display.config-V5-ndk_platform \
+    vendor.qti.hardware.display.config-V6-ndk_platform \
+    vendor.qti.hardware.display.config-V1-ndk_platform.vendor \
+    vendor.qti.hardware.display.config-V2-ndk_platform.vendor \
+    vendor.qti.hardware.display.config-V3-ndk_platform.vendor \
+    vendor.qti.hardware.display.config-V4-ndk_platform.vendor \
+    vendor.qti.hardware.display.config-V5-ndk_platform.vendor \
+    vendor.qti.hardware.display.config-V6-ndk_platform.vendor
 
 # libvr_sam_wrapper
 PRODUCT_PACKAGES += \
