@@ -46,23 +46,7 @@ PRODUCT_PACKAGES += \
 # device/qcom/common modules
 TARGET_COMMON_QTI_COMPONENTS := \
     bt \
-    perf \
-    display
-
-# Display
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.display.config-V5-ndk_platform \
-    libdisplayconfig \
-    libdisplayconfig.qti \
-    libdisplayconfig.qti.so \
-    libdisplayconfig.qti.so.toc \
-    libdisplayconfig.vendor \
-    libdisplayconfig.qti.vendor \
-    libqdMetaData.system \
-    libqdMetaData \
-    gralloc.msm8937 \
-    hwcomposer.msm8937 \
-    memtrack.msm8937 \
+    perf
 
 # libvr_sam_wrapper
 PRODUCT_PACKAGES += \
@@ -95,9 +79,7 @@ PRODUCT_COPY_FILES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    vendor/qcom/opensource/commonsys-intf/display/libqdmetadata \
-    vendor/qcom/opensource/commonsys-intf/display/aidl/config
+    $(LOCAL_PATH)
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/mi439/mi439-vendor.mk)
