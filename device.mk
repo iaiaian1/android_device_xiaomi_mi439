@@ -45,9 +45,7 @@ PRODUCT_PACKAGES += \
 
 # device/qcom/common modules
 TARGET_COMMON_QTI_COMPONENTS := \
-    bt \
     perf \
-    display
 
 # Display
 PRODUCT_PACKAGES += \
