@@ -106,7 +106,8 @@ PRODUCT_COPY_FILES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    vendor/qcom/opensource/commonsys/display
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/mi439/mi439-vendor.mk)
