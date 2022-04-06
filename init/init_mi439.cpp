@@ -17,8 +17,6 @@ static const variant_info_t pine_info = {
     .device = "pine",
     .marketname = "",
     .model = "Redmi 7A",
-    .build_description = "pine-user 10 QKQ1.191014.001 V12.5.1.0.QCMMIXM release-keys",
-    .build_fingerprint = "Xiaomi/pine/pine:10/QKQ1.191014.001/V12.5.1.0.QCMMIXM:user/release-keys",
 };
 
 static const variant_info_t olive_info = {
@@ -26,8 +24,6 @@ static const variant_info_t olive_info = {
     .device = "olive",
     .marketname = "",
     .model = "Redmi 8",
-    .build_description = "olive-user 10 QKQ1.191014.001 V12.5.1.0.QCNMIXM release-keys",
-    .build_fingerprint = "Xiaomi/olive/olive:10/QKQ1.191014.001/V12.5.1.0.QCNMIXM:user/release-keys",
 };
 
 static void set_acdb_path_props(std::string device)
