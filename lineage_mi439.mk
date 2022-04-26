@@ -23,6 +23,8 @@ PRODUCT_PACKAGES += \
 # Bootanimation res
 TARGET_BOOT_ANIMATION_RES := 720
 
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mi439
 PRODUCT_NAME := lineage_mi439
